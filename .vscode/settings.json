@@ -1,6 +1,16 @@
 {
     "cSpell.words": [
+        "HITHRESH",
+        "LOGI",
+        "LOTHRESH",
         "Oximeter",
         "UART"
-    ]
+    ],
+    "files.associations": {
+        "esp_log.h": "c",
+        "esp_system.h": "c",
+        "freertos.h": "c",
+        "stdio.h": "c",
+        "task.h": "c"
+    }
 }
