@@ -1,0 +1,2 @@
+/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc libUART.a  CMakeFiles/__idf_UART.dir/serial.c.obj
+/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib libUART.a

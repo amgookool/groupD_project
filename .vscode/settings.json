@@ -1,16 +1,16 @@
 {
     "cSpell.words": [
-        "HITHRESH",
-        "LOGI",
-        "LOTHRESH",
-        "Oximeter",
-        "UART"
+        "portmacro",
+        "projdefs",
+        "structs"
     ],
+    "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
+        "task.h": "c",
+        "i2c.h": "c",
+        "queue.h": "c",
+        "uart.h": "c",
         "esp_log.h": "c",
-        "esp_system.h": "c",
-        "freertos.h": "c",
-        "stdio.h": "c",
-        "task.h": "c"
+        "reporting.h": "c"
     }
 }

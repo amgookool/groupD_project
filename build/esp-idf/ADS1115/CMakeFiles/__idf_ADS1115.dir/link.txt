@@ -1,0 +1,2 @@
+/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc libADS1115.a  CMakeFiles/__idf_ADS1115.dir/ads1115.c.obj
+/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib libADS1115.a
