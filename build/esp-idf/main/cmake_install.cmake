@@ -1,4 +1,4 @@
-# Install script for directory: /home/adrian/esp/workspace/groupD_project/main
+# Install script for directory: /home/adrian/esp/3006-workspace/Projects/group_project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

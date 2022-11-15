@@ -65,7 +65,7 @@ void serial_task()
                 break;
 
             default:
-                ESP_LOGI(TAG_SERIAL, "EART Event Type: %d", serial_event.type);
+                ESP_LOGI(TAG_SERIAL, "UART Event Type: %d", serial_event.type);
                 break;
             }
         }

@@ -1,4 +1,4 @@
-# Install script for directory: /home/adrian/esp/workspace/groupD_project/components/Measurement
+# Install script for directory: /home/adrian/esp/3006-workspace/Projects/group_project/components/Measurement
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
