@@ -1,5 +1,15 @@
 # Pulse Rate and SPO2 Measurement on ESP8266
 
+## ESP8266 Pinout Diagram
+
+![ESP8266 Pinout](https://i0.wp.com/www.ktechnics.com/wp-content/uploads/2020/08/ESP8266-ESP-01-pin-out.jpg?fit=800%2C800&ssl=1)
+
+- There are 4 configurable GPIO pins
+  - GPIO 0
+  - GPIO 2
+  - GPIO 1 (TX)
+  - GPIO 3 (RX)
+
 ## Resources
 
 - [How to design a better Pulse Oximeter](https://www.analog.com/en/technical-articles/how-to-design-a-better-pulse-oximeter.html)

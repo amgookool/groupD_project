@@ -1,27 +1,23 @@
-#include "include/main.h"
+#include "main.h"
+#include "ads1115.h"
+#include "reporting.h"
 
+static const char *TAG = "MAIN";
 
 
 void app_main()
 {
-    printf("Hello world!\n");
+    ADS1115_CONFIG_FIELDS config_fields;
+    config_fields.OS = 0x00;        // No effect
+    config_fields.MUX = 0x04;       // AINp = A0 & AINn = GND
+    config_fields.PGA = 0x01;       // Gain - 4.096 V
+    config_fields.MODE = 0x00;      // Continuous-conversion mode
+    config_fields.DR = 0x04;        // 128 SPS
+    config_fields.COMP_MODE = 0x00; // Traditional comparator
+    config_fields.COMP_POL = 0x00;  // Active low
+    config_fields.COMP_LAT = 0x00;  // Nonlatching comparator. Alert pin doesn't latch when asserted
+    config_fields.COMP_QUE = 0x02;  // Assert after 4 cconversions
 
-    /* Print chip information */
-    esp_chip_info_t chip_info;
-    esp_chip_info(&chip_info);
-    printf("This is ESP8266 chip with %d CPU cores, WiFi, ",
-            chip_info.cores);
-
-    printf("silicon revision %d, ", chip_info.revision);
-
-    printf("%dMB %s flash\n", spi_flash_get_chip_size() / (1024 * 1024),
-            (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
-
-    for (int i = 10; i >= 0; i--) {
-        printf("Restarting in %d seconds...\n", i);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-    }
-    printf("Restarting now.\n");
-    fflush(stdout);
-    esp_restart();
+    ESP_LOGI(TAG,"Starting TASK\n");
+    xTaskCreate(ads1115_task, "ads1115_task", 2048, (void *)&config_fields, 3, NULL);
 }

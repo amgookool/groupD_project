@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/CMakeFiles/mconf-idf"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/CMakeFiles/mconf-idf"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/CMakeFiles/mconf-idf.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/CMakeFiles/mconf-idf.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/CMakeFiles/mconf-idf-complete.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/CMakeFiles/mconf-idf-complete.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule"
 		},
 		{
-			"file" : "/home/adrian/esp/3006-workspace/Projects/group_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
+			"file" : "/home/adrian/esp/workspace/groupD_project/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule"
 		}
 	],
 	"target" : 
