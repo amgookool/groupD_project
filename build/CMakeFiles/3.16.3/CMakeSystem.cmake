@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-5.15.68.1-microsoft-standard-WSL2")
+set(CMAKE_HOST_SYSTEM "Linux-5.15.74.2-microsoft-standard-WSL2")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "5.15.68.1-microsoft-standard-WSL2")
+set(CMAKE_HOST_SYSTEM_VERSION "5.15.74.2-microsoft-standard-WSL2")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/adrian/esp/ESP8266_RTOS_SDK/tools/cmake/toolchain-esp8266.cmake")

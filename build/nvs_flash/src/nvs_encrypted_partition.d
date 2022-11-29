@@ -3,7 +3,7 @@ src/nvs_encrypted_partition.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/nvs_flash/src/nvs_encrypted_partition.hpp \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp_mem.h \
@@ -31,7 +31,7 @@ src/nvs_encrypted_partition.o: \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

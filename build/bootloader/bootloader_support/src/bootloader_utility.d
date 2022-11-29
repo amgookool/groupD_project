@@ -1,6 +1,6 @@
 src/bootloader_utility.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_utility.c \
- /home/adrian/esp/workspace/groupD_project/build/bootloader/../include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/bootloader/../include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_data_types.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_utility.h \
@@ -23,7 +23,7 @@ src/bootloader_utility.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h
 
-/home/adrian/esp/workspace/groupD_project/build/bootloader/../include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/bootloader/../include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_config.h:
 

@@ -8,7 +8,7 @@ library/ssl_stack.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/internal/x509_vfy.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/internal/ssl_dbg.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_opt.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_port.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_types.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
@@ -34,7 +34,7 @@ library/ssl_stack.o: \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_opt.h:
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/openssl/include/platform/ssl_port.h:
 

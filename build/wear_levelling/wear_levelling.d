@@ -2,7 +2,7 @@ wear_levelling.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/wear_levelling/wear_levelling.cpp \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/wear_levelling/include/wear_levelling.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -29,7 +29,7 @@ wear_levelling.o: \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

@@ -2,7 +2,7 @@ src/crypto/crypto_mbedtls-rsa.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/src/crypto/crypto_mbedtls-rsa.c \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp_mem.h \
@@ -58,7 +58,7 @@ src/crypto/crypto_mbedtls-rsa.o: \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/config.h:
 

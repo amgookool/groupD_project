@@ -1,11 +1,17 @@
-main.o: /home/adrian/esp/workspace/groupD_project/main/main.c \
- /home/adrian/esp/workspace/groupD_project/main/include/main.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+main.o: \
+ /home/adrian/esp/3006-workspace/Projects/group_project/main/main.c \
+ /home/adrian/esp/3006-workspace/Projects/group_project/main/include/main.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/portable.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/deprecated_definitions.h \
@@ -27,36 +33,49 @@ main.o: /home/adrian/esp/workspace/groupD_project/main/main.c \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/mpu_wrappers.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/list.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/pin_mux_register.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h \
- /home/adrian/esp/workspace/groupD_project/components/ADS1115/include/ads1115.h
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/uart.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/spiffs/include/esp_spiffs.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/components/Reporting/include/reporting.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/components/Measurement/include/measurement.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/pwm.h
 
-/home/adrian/esp/workspace/groupD_project/main/include/main.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/main/include/main.h:
 
-/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
+/home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
 
-/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
-
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private/projdefs.h:
 
@@ -100,8 +119,6 @@ main.o: /home/adrian/esp/workspace/groupD_project/main/main.c \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/heap/include/esp_heap_caps.h:
 
-/home/adrian/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h:
-
 /home/adrian/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include/esp_heap_config.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
@@ -110,13 +127,9 @@ main.o: /home/adrian/esp/workspace/groupD_project/main/main.c \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
-/home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log.h:
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h:
 
-/home/adrian/esp/ESP8266_RTOS_SDK/components/log/include/esp_log_internal.h:
-
-/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_system.h:
-
-/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h:
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/i2c.h:
 
@@ -130,5 +143,17 @@ main.o: /home/adrian/esp/workspace/groupD_project/main/main.c \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/gpio_register.h:
 
-/home/adrian/esp/workspace/groupD_project/components/ADS1115/include/ads1115.h:
-/home/adrian/esp/workspace/groupD_project/main/./main.c:
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/uart.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/spiffs/include/esp_spiffs.h:
+
+/home/adrian/esp/3006-workspace/Projects/group_project/components/Reporting/include/reporting.h:
+
+/home/adrian/esp/3006-workspace/Projects/group_project/components/Measurement/include/measurement.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/pwm.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/main/./main.c:

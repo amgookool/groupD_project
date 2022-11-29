@@ -1,6 +1,6 @@
 source/startup.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/source/startup.c \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_attr.h \
@@ -86,7 +86,7 @@ source/startup.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/esp_newlib.h
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/nvs_flash/include/nvs_flash.h:
 

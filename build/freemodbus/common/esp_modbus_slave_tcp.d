@@ -4,7 +4,7 @@ common/esp_modbus_slave_tcp.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include/esp_modbus_slave.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -50,7 +50,7 @@ common/esp_modbus_slave_tcp.o: \
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/adrian/esp/workspace/groupD_project/build/include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 

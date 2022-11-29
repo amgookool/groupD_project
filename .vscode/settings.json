@@ -1,13 +1,24 @@
 {
     "cSpell.words": [
+        "ANYEDGE",
         "dtmp",
         "EART",
         "FLOWCTRL",
+        "HITHRESH",
+        "Kconfig",
         "LOGI",
+        "LOTHRESH",
+        "LWIP",
+        "Oximeter",
+        "Pinout",
         "portmacro",
+        "projbuild",
         "projdefs",
         "storeage",
-        "structs"
+        "structs",
+        "TERMIOS",
+        "UART",
+        "uscs"
     ],
     "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
@@ -16,6 +27,14 @@
         "queue.h": "c",
         "uart.h": "c",
         "esp_log.h": "c",
-        "reporting.h": "c"
+        "reporting.h": "c",
+        "stdio.h": "c",
+        "storing.h": "c",
+        "esp_spiffs.h": "c",
+        "string.h": "c",
+        "unistd.h": "c",
+        "semphr.h": "c",
+        "stdlib.h": "c",
+        "measurement.h": "c"
     }
 }

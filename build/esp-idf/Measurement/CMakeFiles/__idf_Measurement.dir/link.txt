@@ -1,2 +1,0 @@
-/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc libMeasurement.a  CMakeFiles/__idf_Measurement.dir/measurement.c.obj
-/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib libMeasurement.a

@@ -80,7 +80,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/spiffs/cmake_install.cmake")
   include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/main/cmake_install.cmake")
-  include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/ADS1115/cmake_install.cmake")
   include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/Measurement/cmake_install.cmake")
   include("/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/Reporting/cmake_install.cmake")
 

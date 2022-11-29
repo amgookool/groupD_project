@@ -1,2 +1,0 @@
-/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc libReporting.a  CMakeFiles/__idf_Reporting.dir/reporting.c.obj
-/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib libReporting.a

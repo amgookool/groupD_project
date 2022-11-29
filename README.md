@@ -79,3 +79,16 @@
    1. The system should be designed for a maximum power consumption of 100mA at any point in time.
 
    1. The system should be able to produce a precise measurement of the pulse rate using an accuracy of ± 5%.
+
+## Logs 
+[17/11/2022] 
+
+- Started Repository for Project
+- Created Components folder containing the The Measurement and Reporting Modules
+   - The Measurement module contains the code to interface with the LED driving circuit and I2C connection for the ADS11155.
+   - The reporting module contains the code to interface with the UART and Flash storage.
+   - The main module contains the code for utilizing functions created in the reporting and measurement modules for integrating these functions for the operation of the system.
+
+[18/11/2022]
+- Used the "uart_events" example for testing the functionality of the uart drivers.
+- Added custom code for project specific UART functionality 

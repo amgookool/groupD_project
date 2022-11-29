@@ -811,25 +811,6 @@ rule CXX_STATIC_LIBRARY_LINKER____idf_main
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_ADS1115
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking CXX static library.
-
-rule CXX_STATIC_LIBRARY_LINKER____idf_ADS1115
-  command = $PRE_LINK && /usr/bin/cmake -E remove $TARGET_FILE && /home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
 rule C_COMPILER____idf_Measurement
   depfile = $DEP_FILE
   deps = gcc

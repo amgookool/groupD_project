@@ -47,8 +47,8 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MemSan MemSanDbg Check CheckFull
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -73,8 +73,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/home/adrian/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -282,6 +282,12 @@ __idf_Measurement_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos
 
 //Dependencies for the target
 __idf_Reporting_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_esp8266;
+
+//Dependencies for the target
+__idf_Storage_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_esp8266;
+
+//Dependencies for the target
+__idf_Storing_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_esp8266;
 
 //Dependencies for the target
 __idf_app_update_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_lwip;general;__idf_esp8266;
@@ -537,7 +543,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=54
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=53
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

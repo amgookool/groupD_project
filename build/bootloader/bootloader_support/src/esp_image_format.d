@@ -1,6 +1,6 @@
 src/esp_image_format.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/esp_image_format.c \
- /home/adrian/esp/workspace/groupD_project/build/bootloader/../include/sdkconfig.h \
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/bootloader/../include/sdkconfig.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_image_format.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/esp_common/include/esp_err.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_flash_partitions.h \
@@ -17,7 +17,7 @@ src/esp_image_format.o: \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_random.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_sha.h
 
-/home/adrian/esp/workspace/groupD_project/build/bootloader/../include/sdkconfig.h:
+/home/adrian/esp/3006-workspace/Projects/group_project/build/bootloader/../include/sdkconfig.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/bootloader_support/include/esp_image_format.h:
 

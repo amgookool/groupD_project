@@ -1,40 +1,45 @@
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/tcpip_adapter/libtcpip_adapter.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_common/libesp_common.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_event/libesp_event.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/bootloader_support/libbootloader_support.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/nvs_flash/libnvs_flash.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp8266/libesp8266.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/vfs/libvfs.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/lwip/liblwip.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/log/liblog.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/heap/libheap.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/freertos/libfreertos.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/newlib/libnewlib.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/spi_flash/libspi_flash.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/app_update/libapp_update.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/console/libconsole.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/http_parser/libhttp_parser.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp-tls/libesp-tls.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/tcp_transport/libtcp_transport.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_http_client/libesp_http_client.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_http_server/libesp_http_server.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/esp_https_ota/libesp_https_ota.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/wear_levelling/libwear_levelling.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/fatfs/libfatfs.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/freemodbus/libfreemodbus.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/jsmn/libjsmn.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/json/libjson.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/libsodium/liblibsodium.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/mqtt/libmqtt.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/openssl/libopenssl.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/protobuf-c/libprotobuf-c.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/pthread/libpthread.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/spi_ram/libspi_ram.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/spiffs/libspiffs.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/main/libmain.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/ADS1115/libADS1115.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/Measurement/libMeasurement.a
-/home/adrian/esp/3006-workspace/Projects/group_project/build/esp-idf/Reporting/libReporting.a
+/home/adrian/esp/3006-workspace/Projects/group_project/build/Measurement/libMeasurement.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/Reporting/libReporting.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/app_update/libapp_update.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/bootloader_support/libbootloader_support.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/coap/libcoap.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/console/libconsole.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp-tls/libesp-tls.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp-wolfssl/libesp-wolfssl.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp8266/libesp8266.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_common/libesp_common.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_event/libesp_event.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_gdbstub/libesp_gdbstub.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_http_client/libesp_http_client.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_http_server/libesp_http_server.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_https_ota/libesp_https_ota.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/esp_ringbuf/libesp_ringbuf.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/fatfs/libfatfs.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/freemodbus/libfreemodbus.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/freertos/libfreertos.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/heap/libheap.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/http_parser/libhttp_parser.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/jsmn/libjsmn.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/json/libjson.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/libsodium/liblibsodium.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/log/liblog.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/lwip/liblwip.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/main/libmain.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/mbedtls/libmbedtls.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/mdns/libmdns.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/mqtt/libmqtt.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/newlib/libnewlib.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/nvs_flash/libnvs_flash.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/openssl/libopenssl.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/protobuf-c/libprotobuf-c.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/protocomm/libprotocomm.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/pthread/libpthread.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/spi_flash/libspi_flash.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/spi_ram/libspi_ram.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/spiffs/libspiffs.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/tcp_transport/libtcp_transport.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/tcpip_adapter/libtcpip_adapter.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/vfs/libvfs.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/wear_levelling/libwear_levelling.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/wifi_provisioning/libwifi_provisioning.a
+ /home/adrian/esp/3006-workspace/Projects/group_project/build/wpa_supplicant/libwpa_supplicant.a
