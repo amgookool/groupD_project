@@ -91,4 +91,29 @@
 
 [18/11/2022]
 - Used the "uart_events" example for testing the functionality of the uart drivers.
-- Added custom code for project specific UART functionality 
+
+- Added custom code for project specific UART functionality
+
+- Encountered problem with custom code. No compilation errors, nor runtime error being thrown in the program, however, the program does not function as it should. 
+   
+   - The code snippet below is my modified code for the implementation of my UART task function.
+   
+   - ![UART Code Snippet](./Docs/Uart_Code.png)
+   
+   - The image below showcase the output of the program that was flashed which contained the above code snippet.
+
+   - ![UART Output](./Docs/Uart_output.png)
+
+   - Based on the output image, I am able to confirm the triggering of the uart_read_bytes function on line 63. Additionally, the if condition statement is also triggered as the first sent message correctly produces the desired output on the serial terminal from line 68. However, the uart_read_byte function on line 69 and consequently the remaining lines of code do not trigger.
+    I have sent messages as shown in the program output but the code is not triggering the remaining function calls. I have tried resetting the serial queue to its empty state and resetting the UART input as shown in lines 72 and 73, but this does not resolve my problem. 
+   As previously mentioned, there were no compilation errors and no runtime errors occurred during the program execution.
+
+[19/11/2022]
+
+- Used the "storage/spiffs" example for testing the functionality of the storage capability of the ESP8266 device.
+
+- Created the filesystem that will be used for the program application.
+
+- Encountered a problem building the code for project as an build error with the message of "Unable to locate spiffs component" was thrown when using the "make app" command, however, upon research, the solution of this problem was specifying the name of the component in the project module's CMakeLists.txt file.
+
+[20/11/2022]

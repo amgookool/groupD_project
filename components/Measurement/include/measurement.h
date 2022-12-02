@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 #include "sys/time.h"
 
@@ -77,12 +78,23 @@ esp_err_t ads1115_write_data(i2c_port_t i2c_num, uint8_t reg_addr, uint16_t data
 esp_err_t ads1115_read_bytes(i2c_port_t i2c_num, uint8_t reg_addr, uint8_t *data, uint16_t data_len);
 esp_err_t ads1115_read_data(i2c_port_t i2c_num, uint8_t reg_addr, uint16_t *data);
 
+bool is_crest(uint16_t data_arr[], uint16_t number, int k, int i, int j);
+bool is_trough(uint16_t data_arr[], uint16_t number, int k, int i, int j);
+void calc_heart_rate_and_SPO2(uint16_t data_arr[], int k, double *pulse_rate, double *spo2_value);
+int SPO2_lookup_table(double R_value);
+
+// ADS1115 Task Function
 void ads1115_read_task(void* pvParam);
 
-void gpio_pin0_init(void *pvParam);
-void gpio_pin2_init(void* pvParam);
+// LED Driving Circuit Function Prototypes
 void led_driver_init(void *pvParam);
 void led_driver_function(void *pvParam);
+
+// Piezzo Buzzer Function Prototypes
+void gpio_pin2_init(void* pvParam);
+void sound_buzzer(void *pvParam);
+
 void active_wait(int wait_time_usecs);
+
 
 #endif

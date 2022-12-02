@@ -51,7 +51,9 @@ main.o: \
  /home/adrian/esp/3006-workspace/Projects/group_project/components/Reporting/include/reporting.h \
  /home/adrian/esp/3006-workspace/Projects/group_project/components/Measurement/include/measurement.h \
  /home/adrian/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h \
- /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/pwm.h
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/pwm.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h \
+ /home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h
 
 /home/adrian/esp/3006-workspace/Projects/group_project/main/include/main.h:
 
@@ -156,4 +158,8 @@ main.o: \
 /home/adrian/esp/ESP8266_RTOS_SDK/components/newlib/platform_include/sys/time.h:
 
 /home/adrian/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/pwm.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/timers.h:
+
+/home/adrian/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/task.h:
 /home/adrian/esp/3006-workspace/Projects/group_project/main/./main.c:

@@ -2,12 +2,13 @@
 
 static const char *TAG_SERIAL = "SERIAL";
 static const char *TAG_STORAGE = "Storage";
+static const char *TAG_REPORTING = "Reporting";
 
 static QueueHandle_t serial_queue;
 
 void serial_init(void *pvParam)
 {
-    ESP_LOGI(TAG_SERIAL,"Initializing UART configurations.\n");
+    ESP_LOGI(TAG_SERIAL, "Initializing UART configurations.\n");
     uart_config_t serial_configs = {
         .baud_rate = 74880,
         .data_bits = UART_DATA_8_BITS,
@@ -16,74 +17,101 @@ void serial_init(void *pvParam)
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE};
 
     uart_param_config(UART_NUMBER, &serial_configs);
-    uart_driver_install(UART_NUMBER, RX_BUFF_SIZE * 2, TX_BUFF_SIZE * 2, 150, &serial_queue, 0);
+    uart_driver_install(UART_NUMBER, BUF_SIZE * 2, BUF_SIZE * 2, 100, &serial_queue, 0);
 }
 
-/*
-void serial_task()
+void display_menu(void *pvParam)
 {
-    uart_event_t serial_event;
-    uint8_t *dtmp = (uint8_t *)malloc(RX_BUFF_SIZE);
+    printf("----------------- MENU -----------------\n");
+    printf("Please enter Integer to select setting\n\n");
+    printf("1. Set frequency intervals for storing measurements\n");
+    printf("2. Set maximum number of measurements to be stored\n");
+    printf("3. Set the user being measured.\n");
+    printf("4. View Stored measurements\n");
+    printf("5. Enter Measurement Mode\n");
+}
+
+static void uart_event_task(void *pvParameters)
+{
+    uart_event_t event;
+    uint8_t *dtmp = (uint8_t *)malloc(RD_BUF_SIZE);
+    const char *char_option = (const char *)malloc(8);
+    int len = 0;
+    display_menu(NULL);
 
     for (;;)
     {
-        if (xQueueReceive(serial_queue, (void *)&serial_event, (portTickType)portMAX_DELAY))
+        // Waiting for UART event.
+        if (xQueueReceive(serial_queue, (void *)&event, (portTickType)portMAX_DELAY))
         {
-            bzero(dtmp, RX_BUFF_SIZE);
-            ESP_LOGI(TAG_SERIAL, "Serial Event: %d", UART_NUMBER);
+            bzero(dtmp, RD_BUF_SIZE);
 
-            switch (serial_event.type)
+            switch (event.type)
             {
+            // Event of UART receiving data
+            // We'd better handler data event fast, there would be much more data events than
+            // other types of events. If we take too much time on data event, the queue might be full.
             case UART_DATA:
-                uart_write_bytes(UART_NUMBER, (const char *)"---------------- Menu ------------------------------\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"Please enter Integer to select setting\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"1. Set frequency intervals for storing measurements\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"2. Set maximum number of measurements to be stored\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"3. Set the user being measured.\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"4. View Stored measurements\n", serial_event.size);
-                uart_write_bytes(UART_NUMBER, (const char *)"5. Enter Measurements Mode.\n", serial_event.size);
+                // Read the data from serial connection
+                uart_read_bytes(UART_NUMBER, dtmp, event.size, portMAX_DELAY);
+                char_option = (const char *)dtmp;
 
-                uart_read_bytes(UART_NUMBER, dtmp, serial_event.size, portMAX_DELAY);
-                ESP_LOGI(TAG_SERIAL, "The DATA REceived:\n");
-
-                if ((int)dtmp == 1)
+                if (strcmp(char_option, "1") == 0)
                 {
-                    ESP_LOGI(TAG_SERIAL, "Enter the value in seconds\n");
-                    uart_read_bytes(UART_NUMBER, dtmp, serial_event.size, portMAX_DELAY);
-                    int interval = (int)dtmp;
-                    write_file(FILE_SET_INTERVALS, &interval);
+                    uart_flush_input(UART_NUMBER);
+                    xQueueReset(serial_queue);
+                    ESP_LOGI(TAG_SERIAL, "Enter Frequency Interval Value\n");
+                    uart_read_bytes(UART_NUMBER, dtmp, BUF_SIZE, portMAX_DELAY);
+                    ESP_LOGI(TAG_SERIAL, "The interval set is:");
+                    uart_write_bytes(UART_NUMBER, (const char *)dtmp, sizeof(*dtmp));
                 }
-                else if ((int)dtmp == 2)
+                else if (strcmp(char_option, "2") == 0)
                 {
-                    ESP_LOGI(TAG_SERIAL, "Enter the value in seconds\n");
-                    uart_read_bytes(UART_NUMBER, dtmp, serial_event.size, portMAX_DELAY);
-                    int max_num = (int)dtmp;
-                    write_file(FILE_MAX_MEASUREMENTS, &max_num);
+                    uart_flush_input(UART_NUMBER);
+                    xQueueReset(serial_queue);
+                    ESP_LOGI(TAG_SERIAL, "Enter Value for Maximum number of measurements\n");
+                    int len = uart_read_bytes(UART_NUMBER, dtmp, BUF_SIZE, portMAX_DELAY);
+                    ESP_LOGI(TAG_SERIAL, "The maximum number of measurements is:");
+                    uart_write_bytes(UART_NUMBER, (const char *)dtmp, len);
                 }
-                else if ((int)dtmp == 3)
+                else if (strcmp(char_option, "3") == 0)
                 {
-                    ESP_LOGI(TAG_SERIAL, "Enter the name of the person you are measuring.");
-                    uart_read_bytes(UART_NUMBER, dtmp, serial_event.size, portMAX_DELAY);
-                    *user = (char *)dtmp;
-                    ESP_LOGI(TAG_SERIAL, "The User is set to: %s", user);
+                    uart_flush_input(UART_NUMBER);
+                    xQueueReset(serial_queue);
+                    ESP_LOGI(TAG_SERIAL, "Enter Name of user being measured\n");
+                    int len = uart_read_bytes(UART_NUMBER, dtmp, BUF_SIZE, portMAX_DELAY);
+                    ESP_LOGI(TAG_SERIAL, "The User being measured is:");
+                    uart_write_bytes(UART_NUMBER, (const char *)dtmp, len);
                 }
-                else if ((int)dtmp == 4)
+                else if (strcmp(char_option, "4") == 0)
                 {
-                    ESP_LOGI(TAG_REPORTING, "Displaying Measurements.");
-                    read_file(FILE_MEASUREMENTS);
+                    uart_flush_input(UART_NUMBER);
+                    xQueueReset(serial_queue);
+                    ESP_LOGI(TAG_REPORTING, "Stored Measurements\n");
                 }
-
-                uart_write_bytes(UART_NUMBER, (const char *)dtmp, serial_event.size);
+                else if (strcmp(char_option, "5") == 0)
+                {
+                    free(dtmp);
+                    dtmp = NULL;
+                    vTaskDelete(NULL);
+                }
                 break;
 
+            // Event of HW FIFO overflow detected
             case UART_FIFO_OVF:
-                ESP_LOGI(TAG_SERIAL, "HW FIFO Overflow\n");
+                ESP_LOGI(TAG_SERIAL, "hw fifo overflow");
+                // If fifo overflow happened, you should consider adding flow control for your application.
+                // The ISR has already reset the rx FIFO,
+                // As an example, we directly flush the rx buffer here in order to read more data.
                 uart_flush_input(UART_NUMBER);
                 xQueueReset(serial_queue);
                 break;
 
+            // Event of UART ring buffer full
             case UART_BUFFER_FULL:
-                ESP_LOGI(TAG_SERIAL, "Buffer is Full");
+                ESP_LOGI(TAG_SERIAL, "ring buffer full");
+                // If buffer full happened, you should consider increasing your buffer size
+                // As an example, we directly flush the rx buffer here in order to read more data.
                 uart_flush_input(UART_NUMBER);
                 xQueueReset(serial_queue);
                 break;
@@ -91,23 +119,24 @@ void serial_task()
             case UART_PARITY_ERR:
                 ESP_LOGI(TAG_SERIAL, "uart parity error");
                 break;
+
             // Event of UART frame error
             case UART_FRAME_ERR:
                 ESP_LOGI(TAG_SERIAL, "uart frame error");
                 break;
 
+            // Others
             default:
-                ESP_LOGI(TAG_SERIAL, "UART Event Type: %d", serial_event.type);
+                ESP_LOGI(TAG_SERIAL, "uart event type: %d", event.type);
                 break;
             }
         }
     }
+
     free(dtmp);
     dtmp = NULL;
     vTaskDelete(NULL);
 }
-
-*/
 
 void init_storage(void *pvParam)
 {
@@ -171,28 +200,8 @@ void create_file(const char *filename)
     }
 }
 
-/*File Modes
-fopen function allows manipulation of files by specifying a mode which are:
-    r - Opens a file for reading. The file must exist.
-    w - Creates an empty file for writing. If a file with the same name already exists, its content is erased and the file is considered as a new empty file.
-    a - Appends to a file. Writing operations, append data at the end of the file. The file is created if it does not exist.
-    r+ - Opens a file to update both reading and writing. The file must exist.
-    w+ - Creates an empty file for both reading and writing.
-    a+ - Opens a file for reading and appending.
-*/
-// FILE *get_file(const char *file_name, const char *mode_)
-// {
-//     FILE *file;
-//     struct stat st;
-//     // check if file destination exists
-//     if (stat(PATH_STORAGE + *file_name, &st) == 0)
-//     {
-//         file = fopen(PATH_STORAGE + *file_name, *mode_);
-//     }
-//     return file;
-// }
 
-void read_file(const char *filename, int* read_value)
+void read_file(const char *filename, int *read_value)
 {
     FILE *file;
     struct stat st;
@@ -200,7 +209,7 @@ void read_file(const char *filename, int* read_value)
     if (stat(PATH_STORAGE + *filename, &st) == 0)
     {
         file = fopen(PATH_STORAGE + *filename, "r+");
-        
+
         if (sizeof(*filename) == sizeof(FILE_MEASUREMENTS))
         {
             char name[20];
@@ -232,7 +241,6 @@ void read_file(const char *filename, int* read_value)
     else
     {
         ESP_LOGE(TAG_STORAGE, "The file does not exists. Use create file function to create the file.\n");
-        
     }
 }
 
@@ -248,7 +256,7 @@ void write_file(const char *filename, int *value)
     if (stat(PATH_STORAGE + *filename, &st) == 0)
     {
         file = fopen(PATH_STORAGE + *filename, "w+");
-        fprintf(file, (const char*) *value);
+        fprintf(file, (const char *)*value);
         fclose(file);
     }
 }

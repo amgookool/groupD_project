@@ -27,7 +27,5 @@
 #define HIGHEST_PRIORITY 10
 #define LOWEST_PRIORITY 1
 
-// void reporting_task(void *pvParams);
-void measurement_init_task(void *pvParam);
 
 #endif
