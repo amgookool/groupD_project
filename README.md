@@ -117,3 +117,43 @@
 - Encountered a problem building the code for project as an build error with the message of "Unable to locate spiffs component" was thrown when using the "make app" command, however, upon research, the solution of this problem was specifying the name of the component in the project module's CMakeLists.txt file.
 
 [20/11/2022]
+- Created functions to use in project program to create, read and write to the ESP filesystem
+
+- Created the testing conditions for the storage functions
+
+[22/11/2022]
+- Code for calculating the pulse rate and the R value for the SPO2 percentage.
+
+- Encountered a problem with figuring out the size of the array to use to store the infrared and red sensor data
+
+- The code currently produces a stack overflow when trying to append more data to an already full array. This makes the system reset back to an initialization state, hence the array storing the read data will be empty.(undesirable affect)
+
+[26/11/2022]
+- Used the PWM example project from the ESP8266_RTOS_SDK to test and understand how PWM is implemented for the ESP8266 device. 
+
+
+- Created the initialization and task function for the LED driving circuit based on PWM.
+
+
+[27/11/2022]
+- Tested the led driving circuit function with custom made finger holder.
+
+- Edited the PWM configuration to account for light not effectively passing through the finger.
+
+- The use of the finger holder which houses the LEDs and sensors components (directive configuration) introduced more noise in the read signal than the original reflective configuration.
+
+[28/11/2022]
+ - Created the initialization and task function code for interfacing with the buzzer.
+
+ - Problem encountered when trying to use a mutex for pin management of GPIO2 for the Buzzer task function and the ADS1115 read task function. A runtime error occurs where byte data is continuously outputted to the serial terminal.
+
+[29/11/2022]
+- Designed and documented the Finite state diagram of system
+- Designed and documented the program flowchart
+- Documented the configuration of the pins for the two states of the program
+
+[30/11/2022]
+- Documented the task functions for the reporting state
+
+[1/12/2022]
+- Documented the task functions for the measurement state.
